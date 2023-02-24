@@ -1,7 +1,8 @@
 @import "vars"
+@import "fonts"
 
 body
-    font-family: sans-serif
+    +reg
 img
     max-width: 100%
 
@@ -39,12 +40,14 @@ img
         text-decoration: none
         display: block
         margin-top: 5px
+        +bold
 
     &__button
         padding: 18px 47px
         border-radius: 10px
         margin-left: 30px
         font-size: 13px
+        +bold
 
 .main
     background-color: $grey
@@ -61,6 +64,7 @@ img
         &__title
             color: $accent
             font-size: 41px
+            +bold
             padding-right: 200px
             line-height: 55px
             margin: 50px 0 20px 0px
